@@ -1,8 +1,11 @@
 <p align="center">
   <img src="logo.png" alt="Crystal Capital" width="180">
 </p>
+
 # 🏛 CRYSTAL CAPITAL MANAGEMENT & DAO
+
 ### Quantitative Asset Management | Systematic Risk Execution | RWA Tokenization
+
 
 Crystal Capital — децентрализованный инвестиционный фонд и квант-протокол управления капиталом. Мы исключаем человеческий фактор и рыночные прогнозы, переводя управление активами в плоскость жесткого статистического производства и токенизации реального сектора экономики (RWA).
 
