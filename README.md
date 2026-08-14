@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Crystal Capital" width="180">
+  <img src="banner.png" alt="Crystal Capital Management" width="100%">
 </p>
 
 # 🏛 CRYSTAL CAPITAL MANAGEMENT & DAO
