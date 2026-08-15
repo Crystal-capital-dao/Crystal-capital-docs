@@ -1,33 +1,36 @@
-# 📈 QUANTITATIVE ASSET MANAGEMENT FRAMEWORK
-### Crystal Capital Systematic Trading & Capital Protection
+# ⚙️ Quantitative Core & Systematic Execution Framework
+### Mathematical Edge | Statistical Arbitrage | Algorithmic Risk Controls
 
-Архитектура управления ликвидностью фонда **Crystal Capital** основана на жестком математическом аппарате, теории вероятностей и исключении эмоционального фактора в принятии торговых решений.
-
----
-
-## 🧮 1. Математическая база и торговые принципы
-* **Эксплуатация неэффективностей:** Работа с дисбалансами ликвидности (Imbalance / FVG), микроструктурой ордербука и возвратом цен к статистическому среднему.
-* **Positive Expectancy:** Каждая модель верифицирована на дистанции сотен сессий с коэффициентом математического ожидания ($EV > 0$).
-* **Динамическое позиционирование:** Расчет рабочего объема позиции строго по формуле риска от текущей волатильности ($ATR$) и расстояния до стоп-лосса.
+This document details the mathematical architecture, execution algorithms, and risk mitigation models deployed across Crystal Capital quantitative strategies.
 
 ---
 
-## 🛡️ 2. Модель жесткого контроля рисков (Risk Metrics)
-* **Risk Per Trade:** Фиксированный риск на одну позицию составляет **0.5% – 1.0%** от совокупного портфеля.
-* **Hard Stop-Loss:** Стоп-приказ выставляется синхронно с входом в позицию. Отсутствие усреднений против тренда, мартингейла и сетки ордеров.
-* **Daily Drawdown Limit:** Автоматическое отключение исполнения при достижении дневного лимита просадки в **2.0%**.
-* **Institutional Stop-Out:** Предел допустимой проектной просадки фонда зафиксирован на уровне **10%**, после чего позиции ликвидируются в стейблкоины (USDT/USDC).
+## 📐 1. Core Quantitative Strategy & Edge
+
+Crystal Capital eliminates emotional discretion, relying entirely on systematic statistical execution:
+
+* **Mean Reversion & Order Flow Imbalance:** Capturing microstructural price discrepancies and mean-reversion behavior in highly liquid digital asset markets.
+* **Zero-Forecast Principle:** Models do not attempt to predict macro trends; they exploit short-term volatility mispricings with positive mathematical expectation ($EV > 0$).
+* **Execution Protocols:** Algorithmic routing via TWAP and VWAP limits to mitigate market impact and capture maker rebates across central and decentralized order books.
 
 ---
 
-## 🔐 3. Инфраструктура и управление счетами (SMA Model)
-* **Trade-Only API Integration:** Средства институциональных инвесторов и партнеров остаются на их собственных субсчетах (Bybit, Hyperliquid, BingX, KuCoin).
-* **Некастодиальный доступ:** Фонд подключается исключительно через API с правами `Read + Trade`. Права на вывод средств (`Withdrawal`) полностью заблокированы на стороне владельца капитала.
-* **Индивидуальная прозрачность:** Ежедневный мониторинг эквити и аудит торгового журнала в режиме реального времени.
+## 🛡 2. Institutional Risk Parameters
+
+| Parameter | Limit / Policy | Implementation |
+| :--- | :--- | :--- |
+| **Max Risk Per Trade** | **0.5% – 1.0%** | Hard-coded sizing based on dynamic volatility metrics |
+| **Max Open Drawdown** | **8.0% Hard-Cap** | Automatic execution freeze and liquidation to stablecoins |
+| **Leverage Limit** | **1x – 3x (Conservative)** | Strict leverage ceiling to prevent liquidation risks |
+| **Toxic Strategies** | **Strictly Prohibited** | Zero martingale, zero unhedged grid averaging |
 
 ---
 
-### 📩 Связь с Quant-департаментом:
-* **Founder & Head of Trading:** Aleksander Kazankov
-* **Entity:** Crystal Capital DAO
-* **Location:** Dubai, United Arab Emirates
+## 🔐 3. Non-Custodial SMA Architecture
+
+* **Client Control:** Capital remains under client-controlled accounts on supported venues (Bybit, Hyperliquid, BingX).
+* **Trade-Only API:** Connection utilizes restricted API keys with disabled withdrawal and transfer permissions.
+* **Separation of Risk:** Each pool operates independently to eliminate contagion across client accounts.
+
+---
+*© 2026 Crystal Capital Management. All rights reserved.*
