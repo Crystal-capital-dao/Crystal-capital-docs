@@ -27,6 +27,7 @@ Crystal Capital is a decentralized quantitative investment protocol and alternat
 
 ## 📈 3. Investor Relations & Due Diligence Room
 * 📊 **[Performance Analytics & Risk Protocol](performance-and-audit.md)** *(KPI benchmarks, Sharpe/Sortino ratios, Drawdown controls)*
+* 💎 **[Crystal Capital Index & Internal Tokenomics](tokenomics-index.md)** *(TON smart-contract vehicle, NAV accounting, Liquidity)*
 * ⚖️ **[Legal Structure & Governance](legal-and-governance.md)** *(Non-custodial architecture, SPV framework, Compliance)*
 * 🚀 **[Investor Onboarding Process](onboarding.md)** *(Mandate, SMA connection, Settlement)*
 
